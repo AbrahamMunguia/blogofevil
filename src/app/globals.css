@@ -2,25 +2,30 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.container-main{
+  padding: 8px 16px;
+}
+.comment-container{
+  min-height: 80vh;
+}
+.comment-section{
+  background-color: #8d9195;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  color: white;
 }
