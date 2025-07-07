@@ -1,3 +1,5 @@
-export function Container() {
-  return <div id="container" ></div>
+export function Container(props: any) {
+  return <div id="container" >
+    {props.value.map((comment: string) => <p key={comment}>{comment}</p>)}
+  </div>
 }
